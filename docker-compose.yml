@@ -1,6 +1,10 @@
 services:
   db:
     image: postgres:16
+    volumes:
+      - type: bind
+        source: ./init.sql
+        target: /docker-entrypoint-initdb.d/init.sql
     container_name: db
     environment:
       - POSTGRES_USER=${DB_USERNAME}

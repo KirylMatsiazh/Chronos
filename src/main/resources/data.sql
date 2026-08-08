@@ -1,0 +1,2 @@
+GRANT SELECT, INSERT ON entry TO writer;
+REVOKE UPDATE, DELETE ON entry FROM writer;

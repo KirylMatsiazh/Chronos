@@ -31,7 +31,6 @@ public class Entry {
     private String resource;
     private String action;
     private String sourceService;
-
     private String payload;
 }
 
